@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("banner.png");
+}
+
+.page {
+  margin: 0;
+}
+
+.page-table {
+  width: 80%;
+  margin: auto;
+}
+
+.choice {
+  width: 800px;
+  margin: auto;
+}
+
+.button {
+  background: #1AAB8A;
+  color: #fff;
+  border: none;
+  position: relative;
+  height: 60px;
+  font-size: 1.5em;
+  padding: 0 2em;
+  cursor: pointer;
+  transition: 800ms ease all;
+  outline: none;
+  margin: 15px 20px;
+}
+.button:hover {
+  background: #fff;
+  color: #1AAB8A;
+}
+.button:hover::before, .button:hover::after {
+  width: 100%;
+  transition: 800ms ease all;
+}
+.button:before, .button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: #1AAB8A;
+  transition: 400ms ease all;
+}
+.button:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+
+.news-bar {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.table {
+  margin: 40px auto;
+  border: 4px groove #1AAB8A;
+  padding: 10px;
+  background-color: white;
+}
+
+.news {
+  display: inline-flex;
+  padding: 10px;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+.news:last-child {
+  border-bottom: 0;
+}
+.news .news-image {
+  background-color: pink;
+  width: 200px;
+  height: 200px;
+}
+.news .news-image img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+.news .news-details {
+  padding: 0 20px;
+  font-size: 200%;
+  font-family: sans-serif;
+  width: 100%;
+}
+.news .news-details .news-title {
+  text-align: center;
+  padding: 0 2%;
+}
+.news .news-details .news-description {
+  font-size: 60%;
+  padding: 0 5%;
+}
+.news .news-details .news-description .author {
+  float: left;
+}
+.news .news-details .news-description .url {
+  float: right;
+  padding-right: 40px;
+}
+
+/*# sourceMappingURL=App.css.map */
